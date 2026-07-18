@@ -1,0 +1,10 @@
+-- Add lightweight profile fields for Admin User Management
+
+ALTER TABLE parents
+ADD COLUMN IF NOT EXISTS is_active BOOLEAN DEFAULT TRUE;
+
+ALTER TABLE students
+ADD COLUMN IF NOT EXISTS birth_date DATE,
+ADD COLUMN IF NOT EXISTS level TEXT,
+ALTER COLUMN age DROP NOT NULL,
+ALTER COLUMN gender DROP NOT NULL;

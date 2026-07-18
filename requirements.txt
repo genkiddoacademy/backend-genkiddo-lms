@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+httpx
+pydantic-settings
+email-validator
+bcrypt==4.0.1
+passlib[bcrypt]
+PyJWT
+python-multipart
+midtransclient==1.4.2
+psycopg2-binary
+boto3
